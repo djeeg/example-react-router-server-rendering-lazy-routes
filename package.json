@@ -14,7 +14,7 @@
     "es6-promise": "^3.1.2",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
-    "react-router": "^2.0.0-rc5",
+    "react-router": "^2.0.0",
     "webpack": "^2.0.7-beta"
   },
   "scripts": {

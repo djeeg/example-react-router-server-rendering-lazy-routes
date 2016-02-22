@@ -11,14 +11,13 @@ const location = `${pathname}${search}${hash}`
 
 // calling `match` is simply for side effects of
 // loading route/component code for the initial location
-/*
 match({ routes, location }, (err, redirectLocation, renderProps) => {
     render(
         <Router routes={routes} history={browserHistory} />,
         document.getElementById('app')
     )
 });
-*/
+
 
 /*
 match({ routes, location }, (err, redirectLocation, renderProps) => {
@@ -38,7 +37,7 @@ match({ routes, location }, (err, redirectLocation, renderProps) => {
 });
 */
 
-
+/*
 match({ routes, location }, (err, redirectLocation, renderProps) => {
     //console.log(location);
     //console.log(JSON.stringify(renderProps));
@@ -59,3 +58,4 @@ match({ routes, location }, (err, redirectLocation, renderProps) => {
         )
     }
 });
+*/
