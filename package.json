@@ -18,7 +18,8 @@
     "webpack": "^2.0.7-beta"
   },
   "scripts": {
-    "start": "set NODE_ENV=development; ./node_modules/.bin/webpack --progress && babel-node --presets es2015,react modules/server.js"
+    "prestart": "set NODE_ENV=development&& \"./node_modules/.bin/webpack\" --progress",
+    "start": "babel-node --presets es2015,react modules/server.js"
   },
   "author": "Ryan Florence, djeeg",
   "license": "ISC"

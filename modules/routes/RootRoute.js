@@ -17,6 +17,10 @@ export default {
   path: '/',
   component: App,
   getChildRoutes(location, cb) {
+
+    //const cached = System.get('./AboutRoute'); //[object Object] is not supported by webpack
+    //if (cached) callback(null, cached.default);
+
     Promise.all([
       System.import('./AboutRoute') //webpack 2.0 https://gist.github.com/sokra/27b24881210b56bbaff7
     ]).then(function(modules) {
