@@ -9,6 +9,7 @@ import filter from 'lodash/map';
 const { pathname, search, hash } = window.location
 const location = `${pathname}${search}${hash}`
 
+/*
 // calling `match` is simply for side effects of
 // loading route/component code for the initial location
 match({ routes, location }, (err, redirectLocation, renderProps) => {
@@ -17,7 +18,14 @@ match({ routes, location }, (err, redirectLocation, renderProps) => {
         document.getElementById('app')
     )
 });
+*/
 
+match({ routes, location, history: browserHistory }, (error, redirectLocation, renderProps) => {
+    render(
+        <Router {...renderProps} />,
+        document.getElementById('app')
+    )
+});
 
 /*
 match({ routes, location }, (err, redirectLocation, renderProps) => {
